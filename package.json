@@ -1,0 +1,21 @@
+{
+  "name": "sequential",
+  "version": "1.0.0",
+  "description": "Minimal xstate-based flow execution",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./registry": "./src/registry.js",
+    "./service": "./src/service.js",
+    "./executor": "./src/executor.js"
+  },
+  "files": ["src"],
+  "engines": {"node": ">=18.0.0"},
+  "scripts": {"dev": "node --watch example.js"},
+  "dependencies": {
+    "xstate": "^5.25.0",
+    "eventemitter3": "^5.0.0",
+    "nanoid": "^4.0.0"
+  }
+}
